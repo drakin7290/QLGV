@@ -42,8 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaoCaoGV_DTO.cs" />
     <Compile Include="ChucVu_DTO.cs" />
-    <Compile Include="BaoCao_DTO.cs" />
     <Compile Include="LichDayTheoThang_DTO.cs" />
     <Compile Include="ThoiKhoaBieu_DTO.cs" />
     <Compile Include="MonHoc_DTO.cs" />
