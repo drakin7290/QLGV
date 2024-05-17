@@ -1,0 +1,11 @@
+C:\Workspace\AGU\QLGV\QLGV\BUS\bin\Debug\BUS.dll
+C:\Workspace\AGU\QLGV\QLGV\BUS\bin\Debug\BUS.pdb
+C:\Workspace\AGU\QLGV\QLGV\BUS\bin\Debug\DAO.dll
+C:\Workspace\AGU\QLGV\QLGV\BUS\bin\Debug\DTO.dll
+C:\Workspace\AGU\QLGV\QLGV\BUS\bin\Debug\DAO.pdb
+C:\Workspace\AGU\QLGV\QLGV\BUS\bin\Debug\DTO.pdb
+C:\Workspace\AGU\QLGV\QLGV\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Workspace\AGU\QLGV\QLGV\BUS\obj\Debug\BUS.dll
+C:\Workspace\AGU\QLGV\QLGV\BUS\obj\Debug\BUS.pdb
+C:\Workspace\AGU\QLGV\QLGV\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+C:\Workspace\AGU\QLGV\QLGV\BUS\obj\Debug\BUS.csproj.CopyComplete
