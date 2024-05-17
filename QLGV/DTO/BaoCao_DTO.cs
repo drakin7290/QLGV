@@ -16,5 +16,19 @@ namespace DTO
             set { _id = value; }
         }
 
+        private string _name;
+        public string name
+        {
+            get { return _name; }
+            set { _name = value; }
+        }
+
+        private int _sotietday;
+        public int sotietday
+        {
+            get { return _sotietday; }
+            set { _sotietday = value; }
+        }
+
     }
 }

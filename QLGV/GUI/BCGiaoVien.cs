@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using DTO;
+
 namespace GUI
 {
     public partial class BCGiaoVien : Form
@@ -19,7 +21,7 @@ namespace GUI
 
         private void BCGiaoVien_Load(object sender, EventArgs e)
         {
-
+            BaoCao_DTO report = new BaoCao_DTO();
             this.reportViewer1.RefreshReport();
         }
     }

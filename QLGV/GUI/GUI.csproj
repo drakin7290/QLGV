@@ -189,7 +189,6 @@
     <Compile Include="BCGiaoVien.Designer.cs">
       <DependentUpon>BCGiaoVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="CHUCVU.cs" />
     <Compile Include="FormMonHoc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -202,6 +201,7 @@
     <Compile Include="FormThoiKhoaBieu.Designer.cs">
       <DependentUpon>FormThoiKhoaBieu.cs</DependentUpon>
     </Compile>
+    <Compile Include="GIAOVIEN.cs" />
     <Compile Include="GlobalVariable.cs" />
     <Compile Include="DSGiaoVien.cs">
       <SubType>Form</SubType>
@@ -227,6 +227,8 @@
     <Compile Include="ChiTietThoiKhoaBieu.Designer.cs">
       <DependentUpon>ChiTietThoiKhoaBieu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model1.cs" />
+    <Compile Include="MONHOC.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="DangNhap.cs">
       <SubType>Form</SubType>
@@ -234,6 +236,7 @@
     <Compile Include="DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="THOIKHOABIEU.cs" />
     <Compile Include="ThongTinGiaoVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -308,6 +311,7 @@
       <DependentUpon>UserControlDays.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\DTO.BaoCao_DTO.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
