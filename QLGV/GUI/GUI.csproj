@@ -201,7 +201,6 @@
     <Compile Include="FormThoiKhoaBieu.Designer.cs">
       <DependentUpon>FormThoiKhoaBieu.cs</DependentUpon>
     </Compile>
-    <Compile Include="GIAOVIEN.cs" />
     <Compile Include="GlobalVariable.cs" />
     <Compile Include="DSGiaoVien.cs">
       <SubType>Form</SubType>
@@ -227,8 +226,14 @@
     <Compile Include="ChiTietThoiKhoaBieu.Designer.cs">
       <DependentUpon>ChiTietThoiKhoaBieu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model1.cs" />
-    <Compile Include="MONHOC.cs" />
+    <Compile Include="QLGVDataSet.cs">
+      <DependentUpon>QLGVDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLGVDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLGVDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="DangNhap.cs">
       <SubType>Form</SubType>
@@ -236,7 +241,6 @@
     <Compile Include="DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="THOIKHOABIEU.cs" />
     <Compile Include="ThongTinGiaoVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -311,7 +315,6 @@
       <DependentUpon>UserControlDays.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
-    <None Include="Properties\DataSources\DTO.BaoCao_DTO.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -326,6 +329,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="QLGVDataSet.xsc">
+      <DependentUpon>QLGVDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLGVDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLGVDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLGVDataSet.xss">
+      <DependentUpon>QLGVDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Resources\close.png" />
   </ItemGroup>
   <ItemGroup>
@@ -361,6 +375,9 @@
     <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

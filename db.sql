@@ -145,6 +145,9 @@ INSERT THOIKHOABIEU (id_giaovien, id_monhoc, ngayday, tietbatdau, tietketthuc, t
 INSERT THOIKHOABIEU (id_giaovien, id_monhoc, ngayday, tietbatdau, tietketthuc, ten_lop) VALUES ('GV01', 'MH01', '05/12/2024', 4, 5, '12A4');
 INSERT THOIKHOABIEU (id_giaovien, id_monhoc, ngayday, tietbatdau, tietketthuc, ten_lop) VALUES ('GV01', 'MH02', '05/16/2024', 4, 5, '12A4');
 INSERT THOIKHOABIEU (id_giaovien, id_monhoc, ngayday, tietbatdau, tietketthuc, ten_lop) VALUES ('GV02', 'MH02', '06/03/2024', 2, 5, '12A3');
+INSERT THOIKHOABIEU (id_giaovien, id_monhoc, ngayday, tietbatdau, tietketthuc, ten_lop) VALUES ('GV02', 'MH02', '06/12/2024', 3, 5, '12A3');
+INSERT THOIKHOABIEU (id_giaovien, id_monhoc, ngayday, tietbatdau, tietketthuc, ten_lop) VALUES ('GV02', 'MH02', '06/05/2024', 2, 5, '12A3');
+INSERT THOIKHOABIEU (id_giaovien, id_monhoc, ngayday, tietbatdau, tietketthuc, ten_lop) VALUES ('GV02', 'MH02', '05/05/2024', 2, 5, '12A3');
 
 
 SELECT * FROM GIAOVIEN LEFT JOIN MONHOC ON GIAOVIEN.id_monhoc=MONHOC.id
@@ -160,3 +163,33 @@ SELECT TAIKHOAN.*, CHUCVU.name as ten_chucvu FROM TAIKHOAN, CHUCVU WHERE TAIKHOA
 SELECT ngayday, SUM(tietketthuc - tietbatdau) AS sotiet
 FROM THOIKHOABIEU
 GROUP BY ngayday;
+
+
+
+SELECT 
+    GIAOVIEN.id,
+	GIAOVIEN.name,
+    SUM(tietketthuc - tietbatdau) AS sotiet,
+    GIAOVIEN.gioitinh,
+    GIAOVIEN.diachi,
+	GIAOVIEN.luong,
+	GIAOVIEN.sodienthoai,
+	GIAOVIEN.id_monhoc,
+	MONHOC.name as name_monhoc
+FROM 
+    THOIKHOABIEU
+JOIN 
+    GIAOVIEN ON GIAOVIEN.id = THOIKHOABIEU.id_giaovien
+JOIN 
+    MONHOC ON GIAOVIEN.id_monhoc = MONHOC.id
+WHERE  
+    MONTH(ngayday) = MONTH(getdate()) 
+GROUP BY 
+    GIAOVIEN.id, 
+	GIAOVIEN.name,
+    GIAOVIEN.diachi,
+    GIAOVIEN.gioitinh,
+	GIAOVIEN.luong,
+	GIAOVIEN.sodienthoai,
+	GIAOVIEN.id_monhoc,
+	MONHOC.name 

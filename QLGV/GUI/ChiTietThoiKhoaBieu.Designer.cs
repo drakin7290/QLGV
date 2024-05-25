@@ -39,9 +39,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.cboMonHoc = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.dateTeach = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.txtTenLop = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -129,6 +127,7 @@
             this.btnEdit.Text = "Sửa tiết";
             this.btnEdit.UseVisualStyleBackColor = true;
             this.btnEdit.Visible = false;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnDelete
             // 
@@ -139,6 +138,7 @@
             this.btnDelete.Text = "Xóa tiết";
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Visible = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // label8
             // 
@@ -166,14 +166,6 @@
             this.label7.TabIndex = 45;
             this.label7.Text = "Môn học";
             // 
-            // dateTeach
-            // 
-            this.dateTeach.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTeach.Location = new System.Drawing.Point(605, 421);
-            this.dateTeach.Name = "dateTeach";
-            this.dateTeach.Size = new System.Drawing.Size(132, 22);
-            this.dateTeach.TabIndex = 44;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -182,26 +174,17 @@
             this.label5.Size = new System.Drawing.Size(0, 17);
             this.label5.TabIndex = 43;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(528, 424);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 17);
-            this.label6.TabIndex = 42;
-            this.label6.Text = "Ngày dạy";
-            // 
             // txtTenLop
             // 
-            this.txtTenLop.Location = new System.Drawing.Point(387, 419);
+            this.txtTenLop.Location = new System.Drawing.Point(475, 421);
             this.txtTenLop.Name = "txtTenLop";
-            this.txtTenLop.Size = new System.Drawing.Size(120, 22);
+            this.txtTenLop.Size = new System.Drawing.Size(159, 22);
             this.txtTenLop.TabIndex = 41;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(467, 419);
+            this.label4.Location = new System.Drawing.Point(595, 413);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(0, 17);
             this.label4.TabIndex = 40;
@@ -209,7 +192,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(296, 421);
+            this.label2.Location = new System.Drawing.Point(413, 421);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 17);
             this.label2.TabIndex = 39;
@@ -217,7 +200,7 @@
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(161, 424);
+            this.txtID.Location = new System.Drawing.Point(289, 418);
             this.txtID.Name = "txtID";
             this.txtID.ReadOnly = true;
             this.txtID.Size = new System.Drawing.Size(118, 22);
@@ -226,7 +209,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(93, 424);
+            this.label12.Location = new System.Drawing.Point(258, 424);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(21, 17);
             this.label12.TabIndex = 37;
@@ -266,9 +249,7 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.cboMonHoc);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.dateTeach);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.txtTenLop);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
@@ -306,9 +287,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox cboMonHoc;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DateTimePicker dateTeach;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtTenLop;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;

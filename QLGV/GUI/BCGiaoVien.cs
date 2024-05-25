@@ -21,8 +21,16 @@ namespace GUI
 
         private void BCGiaoVien_Load(object sender, EventArgs e)
         {
-            BaoCao_DTO report = new BaoCao_DTO();
+            // TODO: This line of code loads data into the 'QLGVDataSet.BAOCAO_GIAOVIEN' table. You can move, or remove it, as needed.
+            this.BAOCAO_GIAOVIENTableAdapter.Fill(this.QLGVDataSet.BAOCAO_GIAOVIEN);
+            // TODO: This line of code loads data into the 'QLGVDataSet.GIAOVIEN' table. You can move, or remove it, as needed.
+
             this.reportViewer1.RefreshReport();
+        }
+
+        private void reportViewer1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

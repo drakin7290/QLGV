@@ -53,7 +53,7 @@ namespace GUI
             for (int i=1; i<=days; i++)
             {
                 DateTime ngayday = DateTime.Parse(String.Format(@"{0}/{1}/{2}", this.month, i, this.year));
-                UserControlDays ucdays = new UserControlDays(this.gv, ngayday);
+                UserControlDays ucdays = new UserControlDays(this.gv, ngayday, displayDays);
                 
                 int sotiet = 0;
                 if (lichdaytheothang != null && lichdaytheothang.Count() > 0)

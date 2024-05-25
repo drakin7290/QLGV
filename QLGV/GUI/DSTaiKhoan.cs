@@ -75,7 +75,6 @@ namespace GUI
             HienThiDSTaiKhoan();
             MessageBox.Show("Đã thêm tài khoản với mật khẩu mặc định là 123456.", "Thông báo");
             txtID.Text = "";
-            txtID.Name = "";
         }
 
         private void btnChangePwd_Click(object sender, EventArgs e)
@@ -142,7 +141,6 @@ namespace GUI
                 HienThiDSTaiKhoan();
                 MessageBox.Show(String.Format(@"Đã xóa tài khoản {0}", tk.taikhoan), "Thông báo");
                 txtID.Text = "";
-                txtID.Name = "";
             }
         }
     }

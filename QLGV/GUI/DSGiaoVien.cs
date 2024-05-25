@@ -129,7 +129,6 @@ namespace GUI
                 HienThiDanhSachGiaoVien();
                 MessageBox.Show(String.Format(@"Đã xóa giáo viên {0}", gv.name), "Thông báo");
                 txtID.Text = "";
-                txtID.Name = "";
             }
         }
 
@@ -247,7 +246,6 @@ namespace GUI
             HienThiDanhSachGiaoVien();
             MessageBox.Show("Đã thêm giáo viên", "Thông báo");
             txtID.Text = "";
-            txtID.Name = "";
         }
     }
 }

@@ -56,7 +56,6 @@ namespace GUI
             HienThiMonHoc();
             MessageBox.Show("Đã thêm môn học.", "Thông báo");
             txtID.Text = "";
-            txtID.Name = "";
         }
 
         private void dtMonHoc_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -115,7 +114,6 @@ namespace GUI
                 HienThiMonHoc();
                 MessageBox.Show(String.Format(@"Đã xóa môn học {0}", mh.name), "Thông báo");
                 txtID.Text = "";
-                txtID.Name = "";
             }
         }
     }

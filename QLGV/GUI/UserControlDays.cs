@@ -15,11 +15,13 @@ namespace GUI
     {
         GiaoVien_DTO gv;
         DateTime ngayday;
-        public UserControlDays(GiaoVien_DTO _gv, DateTime _ngayday)
+        Action callback;
+        public UserControlDays(GiaoVien_DTO _gv, DateTime _ngayday, Action _callback)
         {
             InitializeComponent();
             this.gv = _gv;
             this.ngayday = _ngayday;
+            this.callback = _callback;
         }
 
         private void UserControlDays_Load(object sender, EventArgs e)
@@ -67,6 +69,7 @@ namespace GUI
         {
             ChiTietThoiKhoaBieu cttkb = new ChiTietThoiKhoaBieu(this.gv, this.ngayday);
             cttkb.ShowDialog();
+            this.callback();
         }
 
         private void lbDays_Click(object sender, EventArgs e)

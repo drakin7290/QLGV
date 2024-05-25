@@ -122,8 +122,8 @@
             // teacherReportSubTooltrip
             // 
             this.teacherReportSubTooltrip.Name = "teacherReportSubTooltrip";
-            this.teacherReportSubTooltrip.Size = new System.Drawing.Size(216, 26);
-            this.teacherReportSubTooltrip.Text = "Báo cáo giáo viên";
+            this.teacherReportSubTooltrip.Size = new System.Drawing.Size(279, 26);
+            this.teacherReportSubTooltrip.Text = "Báo cáo giáo viên theo tháng";
             this.teacherReportSubTooltrip.Click += new System.EventHandler(this.teacherReportSubTooltrip_Click);
             // 
             // groupBox1
